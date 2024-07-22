@@ -321,5 +321,8 @@ class MudiExperience{
 const mudiExperience = new MudiExperience();
 
 setTimeout(()=>{
-    mudiExperience.experienceOn( document.body.querySelector('.mudiSKU').innerHTML.replace(' ','') , document.body.querySelector('.slider-mobile-gutter') )
+    window.location.href.includes('products') && mudiExperience.experienceOn( 
+        document.body.querySelector('.mudiSKU').innerHTML.replace(' ','') , 
+        document.body.querySelector('.slider-mobile-gutter') 
+    )
 },3000)
